@@ -1,4 +1,9 @@
 pyspark
 toree
+numpy
+pandas
+matplotlib
+ipywidgets
+
 
 jupyter-server-proxy

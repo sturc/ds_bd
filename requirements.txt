@@ -1,0 +1,3 @@
+pyspark
+
+jupyter-server-proxy
