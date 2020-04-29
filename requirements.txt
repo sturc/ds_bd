@@ -1,3 +1,7 @@
 pyspark
+numpy
+pandas
+matplotlib
+ipywidgets
 
 jupyter-server-proxy

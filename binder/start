@@ -1,6 +1,10 @@
 #!/bin/bash
 
+
 SPARK_HOME=$HOME/spark-2.4.5-bin-hadoop2.7
 export PATH=$SPARK_HOME/bin:$PATH
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+
 
 exec "$@" 
