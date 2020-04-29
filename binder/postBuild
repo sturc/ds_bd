@@ -5,6 +5,8 @@ tar -xzf spark-2.4.5-bin-hadoop2.7.tgz
 wget https://ftp.fau.de/apache/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
 tar -xzf hadoop-2.9.2.tar.gz
 
+wget -O data/churn.csv  https://dl.dropboxusercontent.com/s/fp31kv3ya7efgbr/churn.csv?dl=1
+
 #Tidy up
 rm spark-2.4.5-bin-hadoop2.7.tgz
 rm hadoop-2.9.2.tar.gz
