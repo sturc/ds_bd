@@ -4,7 +4,7 @@ numpy
 pandas
 matplotlib
 ipywidgets
-sklearn
+scikit-learn
 
 
 jupyter-server-proxy
