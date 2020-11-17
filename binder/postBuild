@@ -1,6 +1,6 @@
 #Download Apache Spark
-wget https://www-eu.apache.org/dist/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz
-tar -xzf spark-2.4.5-bin-hadoop2.7.tgz
+wget https://www-eu.apache.org/dist/spark/spark-3.0.1/spark-3.0.1-bin-hadoop2.7.tgz
+tar -xzf spark-3.0.1-bin-hadoop2.7.tgz
 
 wget https://ftp.fau.de/apache/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
 tar -xzf hadoop-2.9.2.tar.gz
@@ -8,10 +8,10 @@ tar -xzf hadoop-2.9.2.tar.gz
 wget -O data/churn.csv  https://dl.dropboxusercontent.com/s/fp31kv3ya7efgbr/churn.csv?dl=1
 
 #Tidy up
-rm spark-2.4.5-bin-hadoop2.7.tgz
+rm spark-3.0.1-bin-hadoop2.7.tgz
 rm hadoop-2.9.2.tar.gz
 
-SPARK_HOME=$HOME/spark-2.4.5-bin-hadoop2.7
+SPARK_HOME=$HOME/spark-3.0.1-bin-hadoop2.7
 
 jupyter toree install --user --spark_home=$SPARK_HOME
 
