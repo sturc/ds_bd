@@ -9,11 +9,11 @@ from pyspark.sql import SparkSession
 
 
 # %%
-inputFile = "hdfs://hadoop-hadoop-hdfs-nn:9000/data/ghEmployees.txt"
+inputFile = "hdfs:///data/ghEmployees.txt"
 
 
 # %%
-outputFile = "hdfs://hadoop-hadoop-hdfs-nn:9000/tmp/jwcsturm.txt"
+outputFile = "hdfs:///tmp/jwcsturm2.txt"
 
 
 # %%
