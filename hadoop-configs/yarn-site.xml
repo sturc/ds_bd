@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage</name>
+        <value>100</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>192.168.11.2</value>
+        <description></description>
+    </property>
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>$HADOOP_CONF_DIR:$HADOOP_COMMON_HOME/share/hadoop/common/*:$HADOOP_COMMON_HOME/share/hadoop/common/lib/*:
+$HADOOP_HDFS_HOME/share/hadoop/hdfs/*:$HADOOP_HDFS_HOME/share/hadoop/hdfs/lib/*:$HADOOP_YARN_HOME/share/hadoop/yarn/*:
+$HADOOP_YARN_HOME/share/hadoop/yarn/lib/*:/opt/lzopath/*
+    </value>
+
+  </property>
+
+</configuration>
