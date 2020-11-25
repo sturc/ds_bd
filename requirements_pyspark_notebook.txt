@@ -1,3 +1,7 @@
 pywebhdfs==0.4.1
 hdfs==2.5.8
 jedi==0.17.2 
+py4j
+numpy 
+pyarrow==2.0.0
+pandas==1.1.4
