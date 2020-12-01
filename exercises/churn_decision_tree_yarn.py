@@ -117,7 +117,7 @@ dtModel = dt.fit(train)
 # In[ ]:
 
 
-evaluator =  BinaryClassificationEvaluator(labelCol="label",rawPredictionCol="prediction", metricName="areaUnderROC")
+evaluator =  BinaryClassificationEvaluator(labelCol="label",rawPredictionCol="rawPrediction", metricName="areaUnderROC")
 
 
 # ## Do the prediction 
