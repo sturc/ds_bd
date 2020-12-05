@@ -55,7 +55,7 @@ if __name__ == "__main__":
    #test the model
    predictions = pipeModel.transform(test)
    predictions.show()
-   evaluator = BinaryClassificationEvaluator(labelCol="CAT",rawPredictionCol="prediction", metricName="areaUnderROC")
+   evaluator = BinaryClassificationEvaluator(labelCol="CAT",rawPredictionCol="rawPrediction", metricName="areaUnderROC")
    accuracy = evaluator.evaluate(predictions)
    print("Test Error",(1.0 - accuracy))
 
