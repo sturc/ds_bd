@@ -1,7 +1,7 @@
 import unittest
 from os import getcwd
 from os.path import split
-from helper_functions import translate_to_local_file_path
+from path_translation import translate_to_local_file_path
 
 class HelperFunctionsTestCase(unittest.TestCase):
     """Test for HelperFunction.py"""

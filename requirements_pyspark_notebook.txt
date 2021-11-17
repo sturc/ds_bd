@@ -2,6 +2,6 @@ pywebhdfs==0.4.1
 hdfs==2.5.8
 jedi==0.18.0
 py4j==0.10.9
-numpy==1.20.2
-pyarrow==4.0.0
-pandas==1.2.4
+numpy==1.21.4
+pyarrow==6.0.0
+pandas==1.3.4
