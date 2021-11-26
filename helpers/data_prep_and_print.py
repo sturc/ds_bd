@@ -10,6 +10,13 @@ def print_df(sprkDF):
     from IPython.display import display, HTML
     return HTML(new_df.to_html())
 
+def print_df(sprkDF,num_rows): 
+    """Pretty print spark dataframes in jupyter"""
+    new_df = sprkDF.limit(num_rows).toPandas()
+    from IPython.display import display, HTML
+    return HTML(new_df.to_html())
+
+
 def add_weight_col(dataframe, label_col='label', weight_col_name='classWeightCol'):  
   """Re-balancing (weighting) of records to be used in the logistic loss objective function"""
   num_negatives = dataframe.filter(col(label_col) == 0).count()
