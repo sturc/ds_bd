@@ -4,17 +4,14 @@ from pyspark.sql.types import DoubleType
 from pyspark.sql.functions import udf, col
 
 
-def print_df(sprkDF): 
-    """Pretty print spark dataframes in jupyter"""
+def print_df(sprkDF,num_rows=0): 
+  """Pretty print spark dataframes in jupyter"""
+  if num_rows > 0:
+    new_df = sprkDF.limit(num_rows).toPandas() 
+  else:
     new_df = sprkDF.toPandas()
-    from IPython.display import display, HTML
-    return HTML(new_df.to_html())
-
-def print_df(sprkDF,num_rows): 
-    """Pretty print spark dataframes in jupyter"""
-    new_df = sprkDF.limit(num_rows).toPandas()
-    from IPython.display import display, HTML
-    return HTML(new_df.to_html())
+  from IPython.display import display, HTML
+  return HTML(new_df.to_html())  
 
 
 def add_weight_col(dataframe, label_col='label', weight_col_name='classWeightCol'):  
