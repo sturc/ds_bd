@@ -9,7 +9,7 @@ from pyspark.sql import SparkSession
 
 
 # %%
-inputFile = "hdfs:///data/ghEmployees.txt"
+inputFile = "hdfs:///data/credit_failure.csv"
 
 
 # %%
@@ -22,7 +22,7 @@ spark = (SparkSession.builder.getOrCreate())
 # read file 
 spark.sparkContext.setLogLevel("ERROR")
 input = spark.sparkContext.textFile(inputFile)
-counts = input.flatMap(lambda line : line.split(" ")).map(lambda word : [word, 1]).reduceByKey(lambda a, b : a + b)
+counts = input.flatMap(lambda line : line.split(";")).map(lambda word : [word, 1]).reduceByKey(lambda a, b : a + b)
 
 
 # %%
