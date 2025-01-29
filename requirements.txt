@@ -19,7 +19,7 @@ docopt==0.6.2
 entrypoints==0.4
 executing==0.8.3
 fastjsonschema==2.15.3
-fonttools==4.33.0
+fonttools==4.43.0
 hdfs==2.7.0
 idna==3.3
 ipykernel==6.13.0
