@@ -64,7 +64,7 @@ pure-eval==0.2.2
 py4j==0.10.9.3
 pyarrow==14.0.1
 pycparser==2.21
-Pygments==2.15.0
+Pygments==2.20.0
 pyparsing==3.0.8
 pyrsistent==0.18.1
 pyspark==3.3.2
